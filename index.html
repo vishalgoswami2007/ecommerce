@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,4 +73,77 @@
 
 <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help With Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo">
+        <img src="c:\Users\VISHAL GOSWAMI\Downloads\logo.jpg" alt="Help With Code Logo">
+        <span>Help With Code</span>
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="brand-bar">
+        <h1>Help With Code</h1>
+    </div>
+
+    <p>We build premium, high-performance websites for serious businesses.</p>
+
+    <div class="line-animation"></div>
+    <button>Start Your Project</button>
+
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>Fast Delivery</h2>
+        <p>We deliver client projects quickly without compromising quality.</p>
+    </div>
+
+    <div class="card">
+        <h2>Premium Design</h2>
+        <p>Modern 3D designs that make your brand stand out.</p>
+    </div>
+
+    <div class="card">
+        <h2>Business Growth</h2>
+        <p>Helping businesses scale with powerful digital presence.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Help With Code | All Rights Reserved
+</footer>
+
+<script>
+document.addEventListener("mousemove", function(e){
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        let x = (window.innerWidth / 2 - e.pageX) / 25;
+        let y = (window.innerHeight / 2 - e.pageY) / 25;
+        card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+    });
+});
+</script>
+
+</body>
+>>>>>>> 397da74609d5d8e081497640e1ba70776c09dfb8
 </html>

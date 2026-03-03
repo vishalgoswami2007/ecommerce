@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // MENU TOGGLE
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
@@ -40,3 +41,11 @@ function openModal(title){
 function closeModal(){
     document.getElementById("projectModal").style.display = "none";
 }
+=======
+console.log("JS connected successfully 🔥");
+
+let a = 5;
+let b = 10;
+
+console.log(a + b);
+>>>>>>> 397da74609d5d8e081497640e1ba70776c09dfb8
