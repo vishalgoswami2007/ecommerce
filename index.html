@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelpWithCode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">HelpWithCode</h2>
+
+    <div>
+        <button id="darkToggle" class="dark-btn">🌙</button>
+        <span class="menu-toggle" id="menu-toggle">☰</span>
+    </div>
+
+    <ul id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Build Your Digital Future</h1>
+    <p>We create modern websites & digital solutions.</p>
+    <button class="btn">Get Started</button>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">Website Development</div>
+        <div class="card">Frontend Design</div>
+        <div class="card">Backend Setup</div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">Our Work</h2>
+    <div class="portfolio">
+        <div class="project-box" onclick="openModal('E-commerce Website')">Project 1</div>
+        <div class="project-box" onclick="openModal('Trading Dashboard')">Project 2</div>
+        <div class="project-box" onclick="openModal('Business Landing Page')">Project 3</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 HelpWithCode
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">×</span>
+        <h2 id="modalTitle"></h2>
+        <p>This project was built using HTML, CSS & JavaScript.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

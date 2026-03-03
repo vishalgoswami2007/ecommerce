@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    transition:0.3s;
+}
+
+.dark-mode{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0f172a;
+    color:white;
+}
+
+.logo{color:#38bdf8;}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+    margin-left:15px;
+}
+
+.dark-btn{
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(to right,#0f172a,#1e293b);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.btn{
+    padding:10px 25px;
+    margin-top:20px;
+    background:#38bdf8;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+section{padding:80px 10%;}
+
+.section-title{text-align:center;margin-bottom:40px;}
+
+.services,.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card,.project-box{
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dark-mode .card,
+.dark-mode .project-box{
+    background:#1e293b;
+    color:white;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    width:90%;
+    max-width:400px;
+    text-align:center;
+}
+
+.close-btn{
+    float:right;
+    cursor:pointer;
+    font-size:22px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    nav ul{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:0;
+        background:#0f172a;
+        padding:20px;
+    }
+    nav ul.show{display:flex;}
+    .menu-toggle{display:inline;}
+}
